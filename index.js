@@ -8,6 +8,10 @@ app.get('/', (req, res) => {
     res.send(courses);
 });
 
+app.get('/unko', (req, res) => {
+    res.send("unko;");
+});
+
 app.post('/', (req, res) => {
     res.statusCode = 201;
     res.send('Simple REST API POST');
